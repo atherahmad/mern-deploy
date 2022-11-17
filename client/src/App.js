@@ -8,7 +8,7 @@ function App() {
   const [movies, setMovies] = useState([])
   
   useEffect(()=>{
-    axios.get("http://localhost:4000/getmovies")
+    axios.get("https://my-mern-app-ather.onrender.com/getmovies")
     .then(res => setMovies(res.data.movies))
   },[])
   
